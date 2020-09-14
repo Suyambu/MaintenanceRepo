@@ -1,0 +1,4 @@
+Report: 03-04-2020:
+ *Analysed on web services and created a sample program. 
+* Learned web service client. 
+*Researched on mini project and analysed the requirements. 
