@@ -80,9 +80,9 @@ only screen and (max-width: 760px),
 	td:nth-of-type(1):before { content: "Worker name"; }
 	td:nth-of-type(2):before { content: "Work Name"; }
 	td:nth-of-type(3):before { content: "Amount"; }
-	td:nth-of-type(3):before { content: "Date"; }
-	td:nth-of-type(4):before { content: "Edit"; }
-	td:nth-of-type(5):before { content: "Delete"; }
+	td:nth-of-type(4):before { content: "Date"; }
+	td:nth-of-type(5):before { content: "Edit"; }
+	td:nth-of-type(6):before { content: "Delete"; }
 }
     
     </style>
