@@ -1,6 +1,19 @@
 </div>
+<div class="footer">
+  <p>Any Queries please contact suyambu</p>
+</div>
 
-<p>Footer</p>
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFA000;
+  color: white;
+  text-align: center;
+}
+</style>
 <script>
 		$(document).ready(
 				function() {
