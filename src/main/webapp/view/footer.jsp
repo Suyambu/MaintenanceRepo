@@ -1,7 +1,8 @@
 </div>
 
+</div>
 <div class="footer">
-  <p>Footer</p>
+  <p>Any Queries please contact suyambu</p>
 </div>
 
 <style>
@@ -15,7 +16,6 @@
   text-align: center;
 }
 </style>
-
 <script>
 		$(document).ready(
 				function() {
