@@ -1,4 +1,4 @@
-
+<jsp:include page="header.jsp" />
   <style>
 .loader {
   border: 16px solid #f3f3f3;
@@ -22,7 +22,7 @@
 }
 </style>
 </head>
-<jsp:include page="header.jsp" />
+
 
 	 <script type="text/javascript">
 
