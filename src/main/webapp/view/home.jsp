@@ -1,45 +1,67 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
 
-<title>Login</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="view/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="view/vendor/nouislider/nouislider.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Main css -->
+    <link rel="stylesheet" href="view/css/style.css">
 </head>
 <body>
 
-	<div class="container pt-3" style="text-align:center">
-		<form action="${pageContext.request.contextPath}/login" method="post">  
-		<div class="form-group">
-		<label for="email">UserName:</label>
-		<input type="text" class="form-control" id = "email" name="username" style = "width:50% !important;margin:auto"/><br/>  
-		</div>
-		<div class="form-group">
-		<label for="pwd">Password:</label>
-		<input type="password" class="form-control"id="pwd" name="password" style = "width:50% !important;margin:auto"/><br/>
-		</div>
-		
-		<% if(request.getAttribute("alert") != null){ %>
-		<div class="alert alert-danger alert-dismissible fade show">
-		<button type="button" class="close" data-dismiss="alert">&times;</button>
-		<%=request.getAttribute("alert") %>
-		
-		</div>
-		<%}%>
+    <div class="main">
 
-		<input type="submit" value="Login"  class="btn btn-secondary btn-lg" />
-		</form>
-	</div>
-</body>
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="view/images/cns.jpg" alt="">
+                    <div class="signup-img-content">
+                        <h2>Login now </h2>
+                        <p>Welcome back !</p>
+                    </div>
+                </div>
+                <div class="signup-form">
+                   <form action="${pageContext.request.contextPath}/login" modelAttribute="user" class="register-form" id="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="first_name" class="required">User name</label>
+                                  <input type="text" class="form-control" id = "email" name="username" style = "width:100% !important;margin:auto"/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="last_name" class="required">Password</label>
+                                <input type="password" class="form-control"id="pwd" name="password" style = "width:100% !important;margin:auto"/>
+                                </div>
+                               </div>
+                               </div>
+                              
+                               
+                              
+                        <div class="form-submit" style = "text-align: left !important;">
+                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                           
+                        </div>
+                    	</form>
+                    	
+                    	<p style="color:black !important;"> Don't have an account, click <a href="/register">here</a> to signup..<p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="view/vendor/jquery/jquery.min.js"></script>
+    <script src="view/vendor/nouislider/nouislider.min.js"></script>
+    <script src="view/vendor/wnumb/wNumb.js"></script>
+    <script src="view/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="view/vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="view/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
